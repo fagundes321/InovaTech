@@ -1,0 +1,33 @@
+.div_mae{
+    display: flex;
+}
+
+
+.setinha path {
+  stroke: rgb(0, 0, 0); /* Cor da linha */
+  stroke-width: 2; /* Espessura da linha */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+}
+
+button{
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.direito{
+    display: flex;
+    margin-left: auto;
+
+
+}
+.direito .login_topo {
+    margin-right: 30px; /* Maior espaçamento entre o login e os itens */
+  }
+
+a{
+    cursor: pointer;
+}

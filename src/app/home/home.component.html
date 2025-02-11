@@ -1,0 +1,39 @@
+<div class="carousel">
+    <button class="prev" (click)="prevSlide()">
+        <img src="esquerda_banner.svg" alt="">
+    </button>
+    <div class="slide" *ngFor="let item of items; let i = index" [class.active]="i === currentIndex">
+      <img [src]="item.image" alt="Slide">
+    </div>
+
+    <button class="next" (click)="nextSlide()">
+        <img src="direita_banner.svg" alt="">
+    </button>
+  </div>
+  <div class="card">
+    <button class="button_card">
+        <img class="image_cards" src="card1.png" alt="">
+    </button>
+    <button class="button_card">
+        <img class="image_cards" src="card3.png" alt="">
+    </button>
+    <button class="button_card">
+        <img class="image_cards" src="card2.png" alt="">
+    </button>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <p class="titulos">Categories</p>
+  <div class="categorias">
+    <a class="categorias_itens" > <img class="categorias_imagens" src="" alt=""> Computers</a>
+    <a class="categorias_itens" > <img class="categorias_imagens" src="" alt=""> Headphones</a>
+    <a class="categorias_itens" > <img class="categorias_imagens" src="" alt=""> Smathphones</a>
+    <a class="categorias_itens" > <img class="categorias_imagens" src="" alt=""> Eletrodomestics</a>
+    <a class="categorias_itens" > <img class="categorias_imagens" src="" alt=""> Mouse</a>
+    <a class="categorias_itens" > <img class="categorias_imagens" src="" alt=""> Keyboards</a>
+    <a class="categorias_itens" > <img class="categorias_imagens" src="" alt=""> Mousepads</a>
+  </div>
+<br>
+  <p class="titulos">Computers</p>

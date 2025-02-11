@@ -1,0 +1,39 @@
+.store{
+    text-align: center;
+    color: #8257E5;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.navbar_store {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 5px;
+}
+
+.navbar_store a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar_store a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%); /* Centraliza a animação */
+}
+
+.navbar_store a:hover::after,
+.navbar_store a.active::after {
+    width: 100%;
+}

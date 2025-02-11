@@ -1,0 +1,54 @@
+<div class="div_mae">
+  <button mat-button [matMenuTriggerFor]="linguas">
+    {{ selectedLanguage }}  <!-- Exibe o idioma selecionado -->
+    <svg class="setinha" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 6L8 10L12 6" />
+    </svg>
+  </button>
+
+  <mat-menu #linguas="matMenu">
+    <button mat-menu-item (click)="selectLanguage('EN')">EN</button>
+    <button mat-menu-item (click)="selectLanguage('BR')">BR</button>
+    <button mat-menu-item (click)="selectLanguage('ES')">ES</button>
+    <button mat-menu-item (click)="selectLanguage('FR')">FR</button>
+    <button mat-menu-item (click)="selectLanguage('DE')">DE</button>
+    <button mat-menu-item (click)="selectLanguage('IT')">IT</button>
+    <button mat-menu-item (click)="selectLanguage('PT')">PT</button>
+    <button mat-menu-item (click)="selectLanguage('RU')">RU</button>
+    <button mat-menu-item (click)="selectLanguage('CN')">CN</button>
+    <button mat-menu-item (click)="selectLanguage('JP')">JP</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="moeda">
+    {{ selectedCurrency }}  <!-- Exibe a moeda selecionada -->
+    <svg class="setinha" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 6L8 10L12 6" />
+    </svg>
+  </button>
+
+  <mat-menu #moeda="matMenu">
+    <button mat-menu-item (click)="selectCurrency('USD')">🇺🇸 USD</button>
+    <button mat-menu-item (click)="selectCurrency('BRL')">🇧🇷 BRL</button>
+    <button mat-menu-item (click)="selectCurrency('EUR')">🇪🇺 EUR</button>
+    <button mat-menu-item (click)="selectCurrency('GBP')">🇬🇧 GBP</button>
+    <button mat-menu-item (click)="selectCurrency('AUD')">🇦🇺 AUD</button>
+    <button mat-menu-item (click)="selectCurrency('CAD')">🇨🇦 CAD</button>
+    <button mat-menu-item (click)="selectCurrency('JPY')">🇯🇵 JPY</button>
+    <button mat-menu-item (click)="selectCurrency('CNY')">🇨🇳 CNY</button>
+    <button mat-menu-item (click)="selectCurrency('INR')">🇮🇳 INR</button>
+    <button mat-menu-item (click)="selectCurrency('MXN')">🇲🇽 MXN</button>
+    <button mat-menu-item (click)="selectCurrency('RUB')">🇷🇺 RUB</button>
+  </mat-menu>
+
+  <div class="direito">
+    <a class="login_topo">
+      <img class="login_img" src="user.svg" alt="Login">
+      Login
+    </a>
+    
+    <a> 
+      <img src="bag.svg" alt="Itens">
+      Itens
+    </a>
+  </div>
+</div>
