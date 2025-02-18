@@ -6,6 +6,7 @@ import { Navbar2Component } from './navbar2/navbar2.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatMenuModule } from '@angular/material/menu';  // IMPORTAÇÃO CORRETA
 import { NgOptimizedImage } from '@angular/common';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { NgOptimizedImage } from '@angular/common';
     NgOptimizedImage,
     Navbar1Component,
     Navbar2Component,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
