@@ -26,9 +26,99 @@
     align-items: center;
     display: flex;
     gap: 4px;
+    color: #8257E5;
 }
 
 .email_icon{
     width: 25px;
+    
+}
 
+
+.footer_cima{
+    display: flex;
+}
+
+
+.footer_direita_cima{
+    display: flex;
+    margin-left: auto;
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 15px;
+}
+
+ul li{
+    width: 40px;
+    height: 40px; 
+
+    box-shadow: 0 2px 10px #8257E5;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    position: relative;
+    
+    transition: .2s;
+}
+
+ul li:hover{
+    width: 180px;
+}
+
+ul li:hover .icon{
+    transform: scale(0);
+}
+
+ul li span{
+    position:absolute
+}
+
+ul li .icon{
+    color:rgb(236, 236, 236);
+    font-size: 2.2em;
+    text-align: center; 
+    transition: .2s;
+}
+
+ul li .text{
+    color: white;
+    font-size: 18px;
+    transform: scale(0);
+    transition: .2s; 
+    color: black; 
+    transition-delay: .1s;
+    align: center;
+}
+
+ul li:hover .text{
+    transform: scale(1);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: liner-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+}
+
+ul li:hover::before{
+    opacity: 1;
+}
+
+redes_sociais{
+    display: flex;
+}
+
+.cor_icon{
+    fill: #8257E5;
+    stroke: #8257E5;
 }
