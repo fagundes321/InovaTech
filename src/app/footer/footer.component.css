@@ -3,7 +3,6 @@
 } */
 
 .store{
-    text-align:left;
     color: #8257E5;
     font-size: 36px;
     font-weight: 600;
@@ -51,6 +50,7 @@ ul{
     display: flex;
     position: relative;
     gap: 15px;
+    
 }
 
 ul li{
@@ -67,10 +67,11 @@ ul li{
     position: relative;
     
     transition: .2s;
+ 
 }
 
 ul li:hover{
-    width: 180px;
+    width: 100px;
 }
 
 ul li:hover .icon{
@@ -85,7 +86,7 @@ ul li .icon{
     color:rgb(236, 236, 236);
     font-size: 2.2em;
     text-align: center; 
-    transition: .2s;
+    transition: .1s;
 }
 
 ul li .text{
@@ -93,8 +94,7 @@ ul li .text{
     font-size: 18px;
     transform: scale(0);
     transition: .2s; 
-    color: black; 
-    transition-delay: .1s;
+    color: #8257E5; 
     align: center;
 }
 
@@ -116,9 +116,4 @@ ul li:hover::before{
 
 redes_sociais{
     display: flex;
-}
-
-.cor_icon{
-    fill: #8257E5;
-    stroke: #8257E5;
 }
