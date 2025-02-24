@@ -2,6 +2,12 @@
     background-color: darkgray;
 } */
 
+footer{
+    position: absolute;
+    bottom:0%;
+    width: none;
+}
+
 .store{
     color: #8257E5;
     font-size: 36px;
