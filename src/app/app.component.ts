@@ -7,6 +7,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatMenuModule } from '@angular/material/menu';  // IMPORTAÇÃO CORRETA
 import { NgOptimizedImage } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
+import { CartComponent } from './cart/cart.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     Navbar1Component,
     Navbar2Component,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
