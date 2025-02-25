@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatTabsModule} from '@angular/material/tabs';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar1',
   standalone: true,
-  imports: [MatMenuModule],
+  imports: [MatMenuModule,
+    MatTabsModule,
+            RouterModule
+  ],
   templateUrl: './navbar1.component.html',
   styleUrl: './navbar1.component.css'
 })
