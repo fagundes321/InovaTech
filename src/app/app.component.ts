@@ -15,7 +15,7 @@ import { CartComponent } from './cart/cart.component';
   imports: [
     RouterOutlet,
     MatSlideToggleModule,
-    MatMenuModule, // ADICIONADO CORRETAMENTE AQUI
+    MatMenuModule,
     NgOptimizedImage,
     Navbar1Component,
     Navbar2Component,
@@ -24,8 +24,9 @@ import { CartComponent } from './cart/cart.component';
     CartComponent
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css'], // Correção: "styleUrls" no plural
 })
 export class AppComponent {
   title = 'ecommerce_eletronicos';
 }
+

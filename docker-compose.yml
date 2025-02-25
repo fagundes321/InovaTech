@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: inovatech_app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"  # Altere conforme necessário
+    networks:
+      - inovatech_network
+
+  nginx:
+    image: nginx:latest
+    container_name: inovatech_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./mime.types:/etc/nginx/mime.types:ro
+    depends_on:
+      - app
+    networks:
+      - inovatech_network
+
+networks:
+  inovatech_network:
+    driver: bridge
