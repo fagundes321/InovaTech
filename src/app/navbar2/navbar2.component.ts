@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatTabsModule} from '@angular/material/tabs';
-import { RouterModule } from '@angular/router'; // ✅ Importação correta
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar2', 
